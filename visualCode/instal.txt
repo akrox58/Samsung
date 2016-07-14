@@ -1,0 +1,209 @@
+reate a REST-ful application that allows users to store code snippets. 
+* Use HAPI for the server (http://hapijs.com/)
+* Have swagger documentation (https://github.com/glennjones/hapi-swagger)
+* Have Joi validation (https://github.com/hapijs/joi)
+
+Example code snippet payload:
+{
+    id: “user-provided-identitifer for this snipet”,
+    “language”: “js/python/c++/c/etc”,
+    “code”: “actual code snippet”,
+    “createdDate”: “date this snippet was created”,
+    “modifiedDate”: “date this snippet was modified”
+    … feel free to modify/add more to this payload
+}
+
+Use HAPI to expose the following endpoints:
+
+Create a new snippet:
+
+POST /snippets/
+
+GET /snippets/{id}
+
+GET /snippets -> Get all snippets belonging to the user.
+
+Have a fixed list of users in a config file. The userKey/userName should be sent as part of the request headers and not as a path/query/body parameter.
+
+
+DELETE /snippets/{id}
+
+Bonus:
+
+PUT /snippet/{id}
+Update a given snippet, make sure a user can only update his own snippet.
+
+Return proper error codes: http://www.restapitutorial.com/httpstatuscodes.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create a REST-ful application that allows users to store code snippets. 
+* Use HAPI for the server (http://hapijs.com/)
+* Have swagger documentation (https://github.com/glennjones/hapi-swagger)
+* Have Joi validation (https://github.com/hapijs/joi)
+
+Example code snippet payload:
+{
+    id: “user-provided-identitifer for this snipet”,
+    “language”: “js/python/c++/c/etc”,
+    “code”: “actual code snippet”,
+    “createdDate”: “date this snippet was created”,
+    “modifiedDate”: “date this snippet was modified”
+    … feel free to modify/add more to this payload
+}
+
+Use HAPI to expose the following endpoints:
+
+Create a new snippet:
+
+POST /snippets/
+
+GET /snippets/{id}
+
+GET /snippets -> Get all snippets belonging to the user.
+
+Have a fixed list of users in a config file. The userKey/userName should be sent as part of the request headers and not as a path/query/body parameter.
+
+
+DELETE /snippets/{id}
+
+Bonus:
+
+PUT /snippet/{id}
+Update a given snippet, make sure a user can only update his own snippet.
+
+Return proper error codes: http://www.restapitutorial.com/httpstatuscodes.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

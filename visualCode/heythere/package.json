@@ -1,0 +1,17 @@
+{
+  "name": "heythere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "formidable": "^1.0.17",
+    "hapi": "^13.5.0",
+    "joi": "^9.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
