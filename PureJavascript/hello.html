@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="form.js"></script>
+        <title>
+          Javascript <!--- Only javascript - No Inheritance and HandleBar -->
+        </title>
+    </head>
+    <body>
+      <script>
+      //For Toggleling (separate button clicks for student and employee)
+      //Form alone is common for both.
+      //As emp is shown, stud must disappear and vice versa
+        $(document).ready(function(){
+          $("button.A").click(function(){
+            $('form').show(1000);
+            $('#emp').hide(1000);
+            $('#stud').show(1000);
+          });
+
+          $('button.B').click(function(){
+            $('form').show(1000);
+            $('#emp').show(1000);
+            $('#stud').hide(1000);
+          });
+        });
+      </script>
+
+<!-- separate buttons for Student and Employee -->
+
+      <center>
+        <button class="A"> Students </button>
+        <button class="B"> Employees </button>
+      </center>
+
+
+      <form id="form">
+        Name: <input type="text" name="A1" value="Name"><br><br>
+        ID: <input type="text" name="A2" value="ID"><br>
+      </form>
+
+
+<!-- Separate Table ID's for student and employee. Name of table(student or employee) is passed to Add record function
+      it is also sent to delete all function -->
+
+      <div id="stud">
+        <button id="s" onclick="tryme('students')"> Submit </button>
+        <br><br><br>
+        <table id="students" class="hoverTable">TABLE STUDENTS</table>
+        <br><br>
+        <button onclick="Delete('students')">Delete All</button>
+      </div>
+
+      <div id="emp">
+        <button onclick="tryme('employees')"> Submit </button>
+        <br><br><br>
+        <table id="employees" class="hoverTable">TABLE EMPLOYEES</table>
+        <br><br>
+        <button onclick="Delete('employees')">Delete All</button>
+      </div>
+
+    </body>
+</html>
