@@ -1,0 +1,25 @@
+I got the same error, given I was behind a corporate firewall/proxy and my connection was passed the proxy's certificate.
+
+In your command line run:
+
+
+npm config set strict-ssl false
+
+NOTE: that this is not best practice to blindly accept untrusted or invalid SSL certificates, which is what the command does (turn off certificate checking). You can run
+
+
+npm config set strict-ssl true
+
+to turn it back on.
+
+ref: https://thomashunter.name/blog/npm-ssl-errors/
+
+shareimprove this answer
+edited Apr 10 '14 at 20:29
+
+Steve McDonald
+11
+answered Jan 27 '14 at 15:51
+
+jdmonty
+1,008810
