@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script>
+  function removeRow(x) {
+      var i=x.parentNode.parentNode.rowIndex;
+      document.getElementById('apple').deleteRow(i); //Assuming tbldata is the name/id of the table
+  }
+</script>
+<body>
+  <table id="apple">
+    <tr>
+      <td> abc </td>
+      <td> def </td>
+      <td><button onClick="removeRow(this)"></button>
+    </tr>
+    <tr>
+      <td> abc </td>
+      <td> def </td>
+      <td><button onClick="removeRow(this)"></button>
+    </tr>
+  </table>
+</html>
